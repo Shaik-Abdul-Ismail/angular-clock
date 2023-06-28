@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background: rgb(242,171,217);
+    color: white;
+    background: radial-gradient(circle, rgb(157, 213, 77) 0%, rgb(7, 219, 212) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+
+
+
+.Clock{
+    position: relative;
+    display: flex;
+    background-color: #302828;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    border: solid white .3rem;
+    box-shadow: 0px 0px 10px 1px  rgba(241, 140, 140, 0.7);
+    font-size: 26px;
+    font-weight: normal;
+
+    
+
+}
+
+
+
+
+li{
+    list-style-type: none;
+    
+    position: absolute;
+    
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 5px;
+
+}
+span{
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+    
+}
+
+.Clock:after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.niddle{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+ 
+}
+
+.niddle span{
+    width: 5px;
+    height: var(--h);
+    background-color: var(--clr);
+    position: absolute;  
+    border-radius: 5px;
+
+}
